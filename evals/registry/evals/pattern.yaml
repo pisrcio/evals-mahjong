@@ -1,0 +1,9 @@
+# Define a base eval
+pattern:
+  id: pattern.dev.match-v1
+  metrics: [accuracy]
+  description: Evaluate pattern ability
+pattern.dev.match-v1:
+  class: evals.elsuite.pattern:Pattern
+  args:
+    test_jsonl: /mathematical_sequence_pattern/sequence_pattern.jsonl
